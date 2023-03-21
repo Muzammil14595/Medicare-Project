@@ -1,0 +1,28 @@
+<div class="bg-image"
+    style="background-image:
+    url('./assets/images/bg-3.jpg');
+    height: 100vh">
+
+    <div class="container">
+        <h2 class="text-center" style="color: aliceblue;">Change Password</h2>
+        <form (ngSubmit)="onSubmit()">
+
+            <div class="form-group">
+                <label style="color: aliceblue;">Email</label>
+                <input type="email" name="email" id="email"
+                    placeholder="Enter Email" class="form-control"
+                    [(ngModel)]="admin.email">
+            </div>
+            <div class="form-group">
+                <label style="color: aliceblue;">Password</label>
+                <input type="password" name="passord" id="password"
+                    placeholder="Enter New Password" class="form-control"
+                    [(ngModel)]="admin.password"><br>
+            </div>
+            <button class="btn btn-success">Submit</button><br><br>
+        </form>
+        <a routerLink="/adminhome">
+            <button class="btn btn-primary">Back</button>
+        </a>
+    </div>
+</div>

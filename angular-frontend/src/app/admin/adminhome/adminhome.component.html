@@ -1,0 +1,50 @@
+<div class="bg-image"
+    style="background-image:
+    url('./assets/images/bg-6.jpg');
+    height: 100vh">
+
+    <br>
+    <h2 style="text-align: center;">Welcome Admin</h2>
+    <div class="container">
+        <ul>
+
+            <li>
+                <a routerLink="/allproducts">
+                    <button class="btn btn-success">All Products</button>
+                </a>
+            </li><br><br>
+
+
+            <li>
+                <a routerLink="/addproduct">
+                    <button class="btn btn-danger">Add Product</button>
+                </a>
+            </li><br><br>
+
+            <li>
+                <a routerLink="/addcategory">
+                    <button class="btn btn-secondary">Add Category</button>
+                </a>
+            </li><br><br>
+
+            <li>
+                <a routerLink="/allcategories">
+                    <button class="btn btn-dark">All Categories</button>
+                </a>
+            </li><br><br>
+
+            <li>
+                <a routerLink="/custlist">
+                    <button class="btn btn-primary">View All Users</button>
+                </a>
+            </li><br><br>
+
+            <li>
+                <a routerLink="/changepass">
+                    <button class="btn btn-warning">Change Password</button>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<router-outlet></router-outlet>

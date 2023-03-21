@@ -1,0 +1,21 @@
+<div class="bg-image"
+    style="background-image:
+    url('./assets/images/bg-4.jpg');
+    height: 100vh">
+
+    <div class="container">
+        <h2 class="text-center">Product Details</h2><br><br>
+        <b>Product Id:</b> {{product.id}}<br>
+        <b>Product Name:</b> {{product.name}}<br>
+        <b>Product Company:</b> {{product.company}}<br>
+        <b>Product Price:</b> ${{product.price}}<br>
+        <b>Category Id:</b> {{product.category.id}}<br>
+        <b>Category Name:</b> {{product.category.name}}<br>
+        <b>Category Description:</b> {{product.category.description}}<br><br>
+
+
+        <a routerLink="/allproducts">
+            <button class="btn btn-success">Back</button>
+        </a>
+    </div>
+</div>

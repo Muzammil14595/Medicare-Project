@@ -1,0 +1,23 @@
+<div class="bg-image"
+    style="background-image:
+    url('./assets/images/bg-5.jpg');
+    height: 100vh"><br><br><br><br><br>
+
+    
+    <div class="card text-center" style="width: 18rem; margin: auto;
+        background-color: rgb(148, 243, 219);">
+        <img class="card-img-top"
+            [src]="myimage"
+            alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">{{prod.name}}</h5>
+            <b>Product Company:</b> {{prod.company}}<br>
+            <b>Product Price:</b> ${{prod.price}}<br>
+            <b>Category Name:</b> {{prod.category.name}}<br>
+            <b>Category Description:</b> {{prod.category.description}}<br>
+            <a routerLink="/buyproduct/{{prod.id}}">
+                <button class="btn btn-danger">Buy</button>
+            </a>
+        </div>
+    </div>
+</div>

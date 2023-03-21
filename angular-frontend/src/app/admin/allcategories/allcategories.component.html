@@ -1,0 +1,31 @@
+<div class="bg-image"
+    style="background-image:
+    url('./assets/images/bg-15.jpg');
+    height: 100vh">
+
+<div class="container">
+<h2 class="text-center">Category List</h2>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Id</th><th>Name</th><th>Description</th><th>Operation</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let category of categories">
+            <td>{{category.id}}</td>
+            <td>{{category.name}}</td>
+            <td>{{category.description}}</td>
+            <td>
+                <a routerLink="/delcat/{{category.id}}">
+                    <button class="btn btn-danger">Delete</button>
+                </a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<a routerLink="/adminhome">
+    <button class="btn btn-primary">Back</button>
+</a>
+</div>
+</div>
